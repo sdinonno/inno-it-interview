@@ -16,6 +16,12 @@ public class LoginPage extends BasePage {
     @FindBy(css = "button[type=submit]")
     private WebElement loginButton;
 
+    @FindBy(id = "flash")
+    private WebElement alertErrorMessage;
+
+    @FindBy(css = "#content h2")
+    private WebElement title;
+
     public LoginPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
@@ -32,5 +38,13 @@ public class LoginPage extends BasePage {
     public SecureAreaPage clickLogIn(){
         clickElement(loginButton);
         return new SecureAreaPage(driver);
+    }
+
+    public String getAlertErrorText(){
+        return alertErrorMessage.getText();
+    }
+
+    public String getLoginTitle(){
+        return title.getText();
     }
 }
