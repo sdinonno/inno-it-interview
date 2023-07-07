@@ -1,4 +1,4 @@
-package test.java;
+package java;
 
 import hook.Hooks;
 import main.java.pages.LoginPage;
