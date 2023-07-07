@@ -1,5 +1,6 @@
 package test.java;
 
+import hook.Hooks;
 import main.java.pages.SortableDataTablesPage;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;

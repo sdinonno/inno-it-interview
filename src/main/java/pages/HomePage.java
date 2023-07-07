@@ -1,17 +1,10 @@
 package main.java.pages;
 
 import org.openqa.selenium.WebDriver;
-import test.java.BasicAuthTest;
-
 public class HomePage extends BasePage {
 
     public HomePage(WebDriver driver) {
         super(driver);
-    }
-
-    public BasicAuthPage clickBasicAuth(){
-        clickLink("Basic Auth");
-        return new BasicAuthPage(driver);
     }
 
     public LoginPage clickFormAuthentication(){

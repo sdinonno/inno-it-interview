@@ -1,5 +1,6 @@
 package test.java;
 
+import hook.Hooks;
 import main.java.pages.LoginPage;
 import main.java.pages.SecureAreaPage;
 import org.testng.Assert;

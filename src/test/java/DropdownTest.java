@@ -1,5 +1,6 @@
 package test.java;
 
+import hook.Hooks;
 import main.java.pages.DropdownPage;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;

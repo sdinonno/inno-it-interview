@@ -1,4 +1,4 @@
-package test.java;
+package hook;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import main.java.pages.HomePage;
