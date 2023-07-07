@@ -1,13 +1,10 @@
-package java;
-
-import hook.Hooks;
-import main.java.pages.LoginPage;
-import main.java.pages.SecureAreaPage;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import pages.LoginPage;
+import pages.SecureAreaPage;
 
-public class LoginTest extends Hooks {
+public class LoginTest extends BaseTest {
 
     @DataProvider(name = "invalid-username-test-data")
     public Object[][] invalidUsernameDataProviderFunc(){

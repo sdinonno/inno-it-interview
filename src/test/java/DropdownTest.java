@@ -1,14 +1,12 @@
-package test.java;
 
-import hook.Hooks;
-import main.java.pages.DropdownPage;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import pages.DropdownPage;
 
 import java.util.List;
 
-public class DropdownTest extends Hooks {
+public class DropdownTest extends BaseTest {
 
     @DataProvider(name = "options-test-data")
     public Object[][] optionsDataProvider(){

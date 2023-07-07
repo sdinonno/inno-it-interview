@@ -1,12 +1,9 @@
-package test.java;
-
-import hook.Hooks;
-import main.java.pages.SortableDataTablesPage;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import pages.SortableDataTablesPage;
 
-public class SoursableDataTablesTest extends Hooks {
+public class SoursableDataTablesTest extends BaseTest {
 
     @DataProvider(name = "table-test-data")
     public Object[][] tableDataProviderFunc(){
